@@ -1,0 +1,355 @@
+#burst-12 {
+    background: blue;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+  	align-items: center;
+    -webkit-transform: rotate(-10deg);
+   	-moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+     -o-transform: rotate(-10deg);
+
+    -webkit-animation: rotation 3s infinite linear;  
+}
+#burst-12:before, #burst-12:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    background: blue;
+}
+#burst-12:before {
+	z-index: -1;
+    -webkit-transform: rotate(30deg);
+       -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+         -o-transform: rotate(30deg);
+}
+#burst-12:after {
+	z-index: -2;
+    -webkit-transform: rotate(60deg);
+       -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
+}
+
+h3 a {
+	text-decoration: none;
+	font-family: karla;
+	color: #00FFFF;
+	font-size: 17px;
+	-webkit-animation: colorfade 3s infinite linear;
+    animation: colorfade 3s infinite linear;  
+}
+
+h3 a:hover {
+	color: white;
+}
+
+@-webkit-keyframes colorfade {
+    25% {color: #FFFFFF;}
+    50% {color: #00FFFF;}
+    75% {color: #FFFFFF;}
+}
+
+@-webkit-keyframes rotation {
+	50% {-webkit-transform: rotate(-20deg);}
+}
+
+
+/*ACTUAL OLD CSS*/
+
+@font-face {
+    font-family: 'caslon';
+    src: url('../assets/type/CaslonGraphique.ttf') format('truetype');
+    font-weight = normal;
+    font-style = normal;
+}
+
+@font-face {
+    font-family: 'Maria';
+    src: url('../assets/type/maria-webfont-webfont.ttf');
+    font-weight = normal;
+    font-style = normal;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('../assets/type/Karla.ttf');
+    font-weight = normal;
+    font-style = normal;
+}
+@font-face {
+    font-family: 'Fakt';
+    src: url('../assets/type/Fakt-Normal.otf');
+    font-weight = normal;
+    font-style = normal;
+}
+
+a {
+  	font-family: Fakt;
+	text-decoration: none;
+	color: #126e9b;
+	-o-transition: .5s;
+  	-ms-transition: .5s;
+  	-moz-transition: .5s;
+  	-webkit-transition: .5s;
+  	transition: .5s; 
+}
+
+a:hover {
+	color: #673a9d;
+}
+
+body {
+	margin: 5%;
+	font-family: Fakt;
+	/*background-color: #d3ebf1;  */
+}
+
+button {
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+div {
+	font-family: Fakt;
+	font-size: 13px;
+	width: 50%;
+	margin: auto;
+	margin-top: 38px;
+}
+
+figure {
+	display: inline-block;
+}
+
+h1 {
+	font-family: caslon;
+	font-size: 40px;
+	font-weight: normal;
+}
+
+h2 {
+	font-family: Fakt;
+	font-size: 13px;
+	/*color: #126e9b;*/
+	margin: 0;
+	margin-top: 20px;
+	margin-bottom: -5px;
+}
+
+iframe {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 13px;
+	/*line-height: 175%;	*/
+	margin: 20 0 20 0;
+}
+
+ul {
+	padding: 0;
+}
+
+/* ids */
+
+#appear {
+	font-size: 20px;
+	display: none;
+	/*opacity: 0;*/
+}
+
+#bounce {
+	color: #000000;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	margin: 0 auto;
+	text-align: center;
+	top: 5px;
+}
+
+#bounce-container {
+	position:relative;
+	height: 15px;
+	margin: 0;
+}
+
+#homeblurb {
+	text-align: center;
+}
+
+#monogram {
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	width: 15%;
+}
+
+#name-div {
+	z-index = 2;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	/*display: inline-block;*/
+	/*text-align: center;*/
+	width: 100%;
+	/*top: 0px;*/
+	/*left: 0px;*/
+}
+
+#name {
+	/*display: inline-block;*/
+	text-align: center;
+	padding: 0;
+	cursor: move;
+	/*margin: 0;*/
+}
+
+#outline-div {
+	z-index = 1;
+	position: absolute;
+	/*top: 0px;*/
+	/*left: 0px;*/
+}
+
+#outline {
+	color: black;
+   	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   	-webkit-text-stroke-width: 1px;
+   	-webkit-text-stroke-color: #ff6b68;
+}
+
+/* classes: divs */
+
+.inline-img-container {
+	display: flex;
+	justify-content: center;
+	/*width: 100%;*/
+}
+
+.inline-img-child {
+	padding: 0;
+	height: 150px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 3.5%;
+	margin-right: 3.5%;
+}
+
+/* classes: everything else */
+
+.opaque {
+	opacity: 1;
+}
+
+.SM {
+	font-size: 15px;
+}
+
+.contacts {
+	list-style: none;
+	margin-left: 5%;
+}
+
+.highlight {
+	text-shadow: 0 0 5px #126e9b;
+}
+
+.indented {
+	margin-left: 20px;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: #000000;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s; 
+}
+
+.navigation a:hover {
+  color: #ff6b68;
+}
+
+.portfolio {
+	list-style: none;
+}
+.portfolio a {
+	/*text-decoration: underline;*/
+	color: #7c7c7c;
+/*	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;*/
+}
+
+.portfolio a:hover {
+	background: #93bace;
+	color: #ffffff;
+}
+
+.portfolio_img {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.socials {
+	list-style: none;
+	margin: 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: center;
+}
+
+.socials a {
+	text-decoration: none;
+	font-size: 19px;
+	display: block;
+	padding: 10px;
+	margin-top: 20px;
+	color: #000000;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+
+.socials a:hover {
+	color: #2188cd;
+}
