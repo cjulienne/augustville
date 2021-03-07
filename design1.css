@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Fakt';
+    src: url('../assets/type/Fakt-Normal.otf');
+    font-weight = normal;
+    font-style = normal;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff6d9;
+}
+
+h1 {
+	color: white;
+	font-size: 30px;
+	padding: 0;
+	margin: 0;
+	text-shadow: 0 0 10px white;
+	letter-spacing: 25px;
+	font-family: Fakt;
+	text-transform: uppercase;
+	line-height: 50px;
+}
+
+h1::last-line {
+	color: #00FF00;
+	text-shadow: 0 0 10px #00FF00;
+}
+
+h2 {
+	color: #00FF00;
+	font-family: Fakt;
+	letter-spacing: 5px;
+	text-shadow: 0 0 10px #00FF00;
+	font-size: 30px;
+	line-height: 50px;
+}
+
+.banner {
+	position: fixed;
+	height: 12px;
+	margin: 0;
+	left: -120px;
+	top: 30px;
+	-webkit-transform: rotate(-45deg);
+   	-moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.banner-txt {
+	font-size: 13px;
+	letter-spacing: 2px;
+	color: black;
+}
+
+.grid-container {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template rows: auto;
+	justify-items: center;
+	align-items: center;
+}
+
+.splash {
+	margin: auto;
+	height: 80vh;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.show-when-dark {
+	display: none;
+}
+
+
+#bug-msg {
+	position: fixed;
+	left: 30px;
+	bottom: 30px;
+	margin: 0;
+	font-size: 13px;
+}
+
+#return {
+	position: fixed;
+    left: 30px;
+    top: 30px;
+    margin: 0;
+    font-size: 40px;
+}
+
+#return a {
+	text-decoration: none;
+	color: #00FF00;
+}
+
+#return a:hover {
+	color: black;
+}
+
+#triple-name {
+	position: fixed;
+	bottom: 10px;
+	left: 30px;
+	margin: 0;
+	padding: 0;
+}
+
+#unlit {
+	z-index: -1;
+}
+
+#upper-right-msg {	
+	width: 20vw;
+	position: fixed;
+	top: 80px;
+	right: 100px;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+#lit {
+	display: none;
+	z-index: 1;
+}
