@@ -44,9 +44,9 @@ body{
     width: 270px;
     height: 340px;
     z-index: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: fixed;
+    top: 40%;
+    left: 11%;
     margin: -200px 0 0 -140px;
 }
 
@@ -57,9 +57,9 @@ body{
     width: 270px;
     height: 340px;
     z-index: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: fixed;
+    top: 40%;
+    left: 11%;
     margin: -190px 0 0 -130px;
 }
 
@@ -69,9 +69,9 @@ body{
     width: 270px;
     height: 340px;
     z-index: -1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: fixed;
+    top: 40%;
+    left: 11%;
     margin: -180px 0 0 -120px;
 
 }
@@ -80,6 +80,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-content: center;
 }
 
 .circle-container {
