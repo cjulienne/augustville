@@ -10,9 +10,14 @@ a{
 }
 
 h1{
-	color: #e6fff2;
+	color: #black;
 	text-align: left;
 	font: caslon ;
+	margin-left: 5%;
+	margin-top: 5%;
+	background: -webkit-linear-gradient(pink, purple);
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
 
 p{
@@ -27,6 +32,7 @@ footer{
 }
 
 body{
+	background-color: white;
 }
 
 .constainer{
@@ -52,6 +58,7 @@ body{
 
 #card-2 {
     background-color: pink;
+    background-image: url("waves.jpg"); object-fit: cover;
     background-size: 300px 300px;
     border: 2px solid black;
     width: 270px;
@@ -60,20 +67,19 @@ body{
     position: fixed;
     top: 40%;
     left: 11%;
-    margin: -190px 0 0 -130px;
+    margin: -185px 0 0 -125px;
 }
 
 #card-3 {
     border: 2px solid black;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 270px;
     height: 340px;
     z-index: -1;
     position: fixed;
     top: 40%;
     left: 11%;
-    margin: -180px 0 0 -120px;
-
+    margin: -170px 0 0 -110px;
 }
 
 .another-container{
@@ -90,8 +96,9 @@ body{
 }
 
 .card-child{
-    padding: 0;
+    padding: 20;
     margin: 0;
+    text-align: left;
 }
 
 .card-child-bottom{
@@ -99,27 +106,25 @@ body{
     margin-bottom: 15px;
 }
 
+.inside-card-line1 {
+    text-decoration: underline;
+    padding: 20;
+    margin-top: 10%;
+    line-height: normal;
+}
 
+.inside-card-line2 {
+    text-decoration: underline;
+    padding: 20;
+    margin-top: 0%;
+    line-height: normal;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.index-link {
+    font-size: 20px;
+    margin-left: 25px;
+    margin-bottom: 0px;
+    color: #000000;
+    text-decoration: none;
+    border: none;
+}
