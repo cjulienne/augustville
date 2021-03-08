@@ -2,14 +2,21 @@ a{
 	font-family: serif;
 }
 
+@font-face {
+    font-family: 'caslon';
+    src: url('../CaslonGraphique.ttf') format('truetype');
+    font-weight = normal;
+    font-style = normal;
+}
+
 h1{
 	color: #e6fff2;
 	text-align: left;
-	font: ;
+	font: caslon ;
 }
 
 p{
-	font-family: serif;
+	font-family: caslon;
 	font-size: 15px;
 	text-align: center;
 }
