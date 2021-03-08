@@ -1,0 +1,117 @@
+a{
+	font-family: serif;
+}
+
+h1{
+	color: #e6fff2;
+	text-align: left;
+	font: ;
+}
+
+p{
+	font-family: serif;
+	font-size: 15px;
+	text-align: center;
+}
+
+footer{
+	text-align: center;
+	font: serif;
+}
+
+body{
+}
+
+.constainer{
+	padding: 2px 16px;
+}
+
+#pink {
+    background-color: #ffe5f9;
+    opacity: 0.5;
+}
+
+#card-1 {
+    border: 2px solid black;
+    background-color: #FFFFFF;
+    width: 270px;
+    height: 340px;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 -140px;
+}
+
+#card-2 {
+    background-color: pink;
+    background-size: 300px 300px;
+    border: 2px solid black;
+    width: 270px;
+    height: 340px;
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -190px 0 0 -130px;
+}
+
+#card-3 {
+    border: 2px solid black;
+    background-color: #FFFFFF;
+    width: 270px;
+    height: 340px;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -180px 0 0 -120px;
+
+}
+
+.another-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.circle-container {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.card-child{
+    padding: 0;
+    margin: 0;
+}
+
+.card-child-bottom{
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
